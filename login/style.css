@@ -1,16 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background-color: #ffffff;
 }
 
-.container{
+.container2 {
+    width: 500px;
+    height: 600px;
+    animation: image 2s ease;
+}
+
+.container2 img {
+    width: 500px;
+    height: 600px;
+    border-radius: 10px 0 0 10px;
+}
+
+.container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -19,7 +31,7 @@ body{
     padding-top: 150px;
 }
 
-.register{
+.register {
     width: 500px;
     height: 600px;
     background-color: #FFF;
@@ -29,11 +41,11 @@ body{
     border-radius: 10px;
 }
 
-.register p{
+.register p {
     font-size: 14px;
 }
 
-input{
+input {
     width: 346px;
     padding: 10px;
     margin-bottom: 15px;
@@ -41,12 +53,12 @@ input{
     animation: login 1s ease;
 }
 
-input:focus{
+input:focus {
     background-color: #e4e4e4fd;
     border: solid 1px #4da7fc;
 }
 
-.inputs h1{
+.inputs h1 {
     display: flex;
     justify-content: center;
     font-size: 40px;
@@ -54,16 +66,16 @@ input:focus{
     color: #4da7fc;
 }
 
-.links{
+.links {
     display: flex;
     justify-content: center;
 }
 
-.links a{
+.links a {
     color: #4da7fc;
 }
 
-.button{
+.button {
     display: flex;
     justify-content: center;
     width: 372px;
@@ -75,18 +87,18 @@ input:focus{
     animation: button 2s ease;
 }
 
-.button:active{
+.button:active {
     background-color: #4da7fc;
 }
 
-.iconGoogle img{
+.iconGoogle img {
     width: 35px;
     height: 35px;
     margin-left: 25px;
     transition: all 0.3s ease-out;
 }
 
-.iconGoogle img:hover{
+.iconGoogle img:hover {
     width: 40px;
     height: 40px;
     transition: all 0.3s ease-in;
@@ -94,7 +106,7 @@ input:focus{
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.icon{
+.icon {
     width: 370px;
     height: 70px;
     display: flex;
@@ -103,12 +115,13 @@ input:focus{
 }
 
 @keyframes login {
-    0%{
+    0% {
         width: 0px;
         transition: all 1s ease-in;
         border: solid 1px #4da7fc;
     }
-    100%{
+
+    100% {
         width: 300px;
         transition: all 1s ease-in;
         border: solid 1px #ddeefd;
@@ -116,20 +129,28 @@ input:focus{
 }
 
 @keyframes button {
-    0%{
+    0% {
         margin: auto;
         color: transparent;
         width: 0;
         transition: all 2s ease-in;
     }
-    100%{
+
+    100% {
         width: 372px;
         margin: auto;
         transition: all 2s ease-in;
     }
 }
 
+@keyframes image {
+    0% {
+        height: 0px;
+        transition: all 2s ease-in;
+    }
 
-
-
-
+    100% {
+        height: 600px;
+        transition: all 2s ease-in;
+    }
+}
