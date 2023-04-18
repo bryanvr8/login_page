@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.register{
+    width: 500px;
+    height: 600px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.register p{
+    font-size: 14px;
+}
+
+input{
+    width: 346px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-style: none;
+    animation: login 1s ease;
+}
+
+input:focus{
+    background-color: #e4e4e4fd;
+    border: solid 1px #4da7fc;
+}
+
+.inputs h1{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    padding-bottom: 60px;
+    color: #4da7fc;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+}
+
+.links a{
+    color: #4da7fc;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    width: 372px;
+    padding: 12px;
+    background-color: #68b2f8;
+    border-radius: 10px;
+    color: aliceblue;
+    border-style: none;
+    animation: button 2s ease;
+}
+
+.button:active{
+    background-color: #4da7fc;
+}
+
+.iconGoogle img{
+    width: 35px;
+    height: 35px;
+    margin-left: 25px;
+    transition: all 0.3s ease-out;
+}
+
+.iconGoogle img:hover{
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease-in;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.icon{
+    width: 370px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes login {
+    0%{
+        width: 0px;
+        transition: all 1s ease-in;
+        border: solid 1px #4da7fc;
+    }
+    100%{
+        width: 300px;
+        transition: all 1s ease-in;
+        border: solid 1px #ddeefd;
+    }
+}
+
+@keyframes button {
+    0%{
+        margin: auto;
+        color: transparent;
+        width: 0;
+        transition: all 2s ease-in;
+    }
+    100%{
+        width: 372px;
+        margin: auto;
+        transition: all 2s ease-in;
+    }
+}
+
+
+
+
+
